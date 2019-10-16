@@ -1,4 +1,3 @@
-
 {
   "name": "Linas-Friend-Finder",
   "version": "1.0.0",
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Linag94/Linas-Friend-Finder/issues"
   },
-  "homepage": "https://github.com/Linag94/Linas-Friend-Finder#readme"
+  "homepage": "https://github.com/Linag94/Linas-Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
 }
