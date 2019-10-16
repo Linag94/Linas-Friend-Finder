@@ -39,7 +39,7 @@
     <h3><strong>Question 1</strong></h3>
     <div class="form-group">
         <label for="question1">How people interact with each other is motivated by technology.</label>
-        <select class="form-control" id="q1" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -53,7 +53,7 @@
     <h3><strong>Question 2</strong></h3>
     <div class="form-group">
         <label for="question2">Convenience plays a factor in friendships/relationships. </label>
-        <select class="form-control" id="q2" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>f
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -67,7 +67,7 @@
     <h3><strong>Question 3</strong></h3>
     <div class="form-group">
         <label for="question3">You find yourself planning your future not your today.</label>
-        <select class="form-control" id="q3" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -81,7 +81,7 @@
     <h3><strong>Question 4</strong></h3>
     <div class="form-group">
         <label for="question4">First impression are important to you.</label>
-        <select class="form-control" id="q4" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -95,7 +95,7 @@
     <h3><strong>Question 5</strong></h3>
     <div class="form-group">
         <label for="question5">Physical appearance is something that you value.</label>
-        <select class="form-control" id="q5" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -109,7 +109,7 @@
     <h3><strong>Question 6</strong></h3>
     <div class="form-group"></div>
         <label for="question6">When making decisions you consider the outcome first. </label>
-        <select class="form-control" id="q6" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -123,7 +123,7 @@
     <h3><strong>Question 7</strong></h3>
     <div class="form-group">
         <label for="question7">You value experiences over materials. </label>
-        <select class="form-control" id="q7" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -151,7 +151,7 @@
     <h3><strong>Question 9</strong></h3>
     <div class="form-group">
         <label for="question9">Your career is more inmportant than your social experience.</label>
-        <select class="form-control" id="q9" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -164,7 +164,7 @@
     </div>
     <h3><strong>Question 10</strong></h3>
         <label for="question10">Your rather work now and play later. </label>
-        <select class="form-control" id="q10" style="display:inline;">
+        <select class="form-control" id="q1" style="width:auto;">
             <option value="empty"></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -176,7 +176,7 @@
     </div>
 
 
-    <!-- Submit Button -->
+    <!-- Submit Button
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
             aria-hidden="true"></i>
         Submit</button>
@@ -191,12 +191,12 @@
 
     </div>
 
-    <!-- Modal -->
-    <div id="results-modal" class="modal fade" role="dialog">
+    <-- Modal -->
+    <!-- <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
+            <-- Modal content-->
+            <!-- <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
                     <h2 class="modal-title"><strong>Best Match</strong></h2>
@@ -298,6 +298,87 @@
 
 
 
+</body> --></form>
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
+		
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">You Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<a href="/api/friends">Discover Friends in North Jersey API</a>
+			<span>|</span>
+			<a href="https://github.com/Linag94/Linas-Friend-Finder">GitHub Repo</a>
+		</div>
+	</footer>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+</html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>
+
 
 </html>
