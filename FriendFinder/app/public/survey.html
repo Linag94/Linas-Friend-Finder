@@ -1,182 +1,137 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>FriendFinder</title>
-
-    <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" type="text/css" href="/FriendFinder/app/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-    <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
+	<title>Survey - Lina's Love Locator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Link static CSS -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
-
 <body>
-
-    <div class="container">
-
-        <h2>Survey Questions</h2>
-        <hr>
-
-        <h3><strong>About You</strong></h3>
-        <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required="">
-
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control" required="">
-
-        <hr>
-
-    </div>
-    <h3><strong>Question 1</strong></h3>
-    <div class="form-group">
-        <label for="question1">How people interact with each other is motivated by technology.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 2</strong></h3>
-    <div class="form-group">
-        <label for="question2">Convenience plays a factor in friendships/relationships. </label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>f
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 3</strong></h3>
-    <div class="form-group">
-        <label for="question3">You find yourself planning your future not your today.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 4</strong></h3>
-    <div class="form-group">
-        <label for="question4">First impression are important to you.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 5</strong></h3>
-    <div class="form-group">
-        <label for="question5">Physical appearance is something that you value.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 6</strong></h3>
-    <div class="form-group"></div>
-        <label for="question6">When making decisions you consider the outcome first. </label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 7</strong></h3>
-    <div class="form-group">
-        <label for="question7">You value experiences over materials. </label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 8</strong></h3>
-    <div class="form-group">
-        <label for="question8">When out in a social setting you think storngly about how others view you.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px ;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 9</strong></h3>
-    <div class="form-group">
-        <label for="question9">Your career is more inmportant than your social experience.</label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-    </div>
-    <h3><strong>Question 10</strong></h3>
-        <label for="question10">Your rather work now and play later. </label>
-        <select class="form-control" id="q1" style="width:auto;">
-            <option value="empty"></option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <div class="chosen-container chosen-container-single" style="width: 157px;" title="" id="q1_chosen"></div>
-    </div>
-
-
-</form>
+	<div class="container content">
+		<h1>Survey</h1>
+		<p>Take a quick survey to locate your perfect match in North Jersey! 
+            The questions are weighed 1 through 5. 1 being strongle agree, 5 being strongly disagree and you guessed it 3 being nuetral. Good luck!
+        </p>
+		<form>
+			<div class="form-group">
+				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+			</div>
+			<div class="form-group">
+				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+			</div>
+			<div class="form-group">
+				<label for="question1">Your rather work now and play later. </label>
+				<select class="form-control" id="question1">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question2">Your career is more inmportant than your social experience.</label>
+				<select class="form-control" id="question2">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question3">When out in a social setting you think storngly about how others view you.</label>
+				<select class="form-control" id="question3">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question4">You value experiences over materials.</label>
+				<select class="form-control" id="question4">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question5">When making decisions you consider the outcome first. </label>
+				<select class="form-control" id="question5">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question6">Physical appearance is something that you value.</label>
+				<select class="form-control" id="question6">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question7">First impressions are important to you.</label>
+				<select class="form-control" id="question7">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question8">You find yourself planning your future not your today.</label>
+				<select class="form-control" id="question8">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question9">Convenience plays a factor in friendships/relationships. </label>
+				<select class="form-control" id="question9">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question10">How people interact with each other is motivated by technology.</label>
+				<select class="form-control" id="question10">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</form>
 		<div class="text-center">
 			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
@@ -187,7 +142,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your Best Friend</h1>
+						<h3 class="modal-title">Lin's Lover for you!</h1>
 					</div>
 					<div class="modal-body">
 						<h2 id="bestFriend"></h2>
@@ -203,7 +158,7 @@
 
 	<footer>
 		<div class="container">
-			<a href="/api/friends">Discover Friends in North Jersey API</a>
+			<a href="/api/friends">Love in North Jersey API</a>
 			<span>|</span>
 			<a href="https://github.com/Linag94/Linas-Friend-Finder">GitHub Repo</a>
 		</div>
@@ -257,6 +212,3 @@
 		}
 	});
 </script>
-
-
-</html>
