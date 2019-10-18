@@ -24,7 +24,7 @@
 			<div class="form-group">
 				<label for="question1">Your rather work now and play later. </label>
 				<select class="form-control" id="question1">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -35,7 +35,7 @@
 			<div class="form-group">
 				<label for="question2">Your career is more inmportant than your social experience.</label>
 				<select class="form-control" id="question2">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -46,7 +46,7 @@
 			<div class="form-group">
 				<label for="question3">When out in a social setting you think storngly about how others view you.</label>
 				<select class="form-control" id="question3">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -57,7 +57,7 @@
 			<div class="form-group">
 				<label for="question4">You value experiences over materials.</label>
 				<select class="form-control" id="question4">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -68,7 +68,7 @@
 			<div class="form-group">
 				<label for="question5">When making decisions you consider the outcome first. </label>
 				<select class="form-control" id="question5">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -79,7 +79,7 @@
 			<div class="form-group">
 				<label for="question6">Physical appearance is something that you value.</label>
 				<select class="form-control" id="question6">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -90,7 +90,7 @@
 			<div class="form-group">
 				<label for="question7">First impressions are important to you.</label>
 				<select class="form-control" id="question7">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -101,7 +101,7 @@
 			<div class="form-group">
 				<label for="question8">You find yourself planning your future not your today.</label>
 				<select class="form-control" id="question8">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -112,7 +112,7 @@
 			<div class="form-group">
 				<label for="question9">Convenience plays a factor in friendships/relationships. </label>
 				<select class="form-control" id="question9">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -123,7 +123,7 @@
 			<div class="form-group">
 				<label for="question10">How people interact with each other is motivated by technology.</label>
 				<select class="form-control" id="question10">
-					<option value="empty"></option>
+					<!-- <option value="empty"></option> -->
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -199,12 +199,14 @@
 					$("#question10").val()
 				]
 			};
-			var currentURL = window.location.origin;
+			// var currentURL = window.location.origin;
+			// console.log(currentURL);
 			// Ajax call for receiving response after POST req
-			$.post(currentURL + "/api/friends", newUser, function(data) {
+			$.post("/api/friends", newUser, function(data) {
 				$("#bestFriend").text(data.name);
 				$("#bestFriendPhoto").attr("src", data.photo);
 				$("#bestFriendModal").modal("toggle");
+				console.log(data);
 			});
 		} else {
 			// If a required field is missing, show alert

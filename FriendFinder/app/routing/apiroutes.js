@@ -1,11 +1,11 @@
-var friends = require("../data/friends.js");
+var friends = require("../data/friends");
 
 module.exports = function(app) {
   // Return all friends found in friends.js as JSON
   app.get("/api/friends", function(req, res) {
     res.json(friends);
     console.log(req.body.scores);
-  });
+
 
  
     // Receive user details (name, photo, scores)
@@ -15,7 +15,7 @@ module.exports = function(app) {
     for(var i = 0; i < user.scores.length; i++) {
       user.scores[i] = parseInt(user.scores[i]);
     }
-
+  
     // default friend match is the first friend but result will be whoever has the minimum difference in scores
     var bestFriendIndex = 0;
     var minimumDifference = 40;
@@ -41,4 +41,5 @@ module.exports = function(app) {
 
     // send back to browser the best friend match
     res.json(friends[bestFriendIndex]);
-  };
+  }
+  )};
