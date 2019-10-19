@@ -202,6 +202,8 @@
 			// var currentURL = window.location.origin;
 			// console.log(currentURL);
 			// Ajax call for receiving response after POST req
+			console.log(newUser);
+			
 			$.post("/api/friends", newUser, function(data) {
 				$("#bestFriend").text(data.name);
 				$("#bestFriendPhoto").attr("src", data.photo);
