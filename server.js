@@ -15,7 +15,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // API and HTML routes
-require("./FriendFinder/app/routing/apiRoutes.js")(app);
+require('./FriendFinder/app/routing/apiroutes')(app);
 require("./FriendFinder/app/routing/htmlRoutes.js")(app);
 
 app.listen(PORT, function() {
