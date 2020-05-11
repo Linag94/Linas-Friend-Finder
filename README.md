@@ -14,7 +14,7 @@
 
 To install the application follow the instructions below:
 * cd development
-* git clone git@github.com:Linag94/Linas-Friend-Finder.git
+* git clone github.com:Linag94/Linas-Friend-Finder.git
 * cd Linas-Friend-Finder
 * npm install
 	
